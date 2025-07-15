@@ -1,17 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Viking-IT Oy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viking-IT Oy – Viikinkivoimaa yrityksesi pilvipalveluihin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #F7F7F7;
+            color: #2C3E50;
+        }
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #0A1128;
+			margin-bottom: 1.5rem;
+			margin-top: 1rem;
+        }
+        .navbar {
+            background-color: #0A1128;
+        }
+        .nav-link, .navbar-brand {
+            color: #F7F7F7 !important;
+        }
+        .btn-primary {
+            background-color: #CD7F32;
+            border: none;
+        }
+        .highlight {
+            color: #FFD700;
+        }
+        footer {
+            background-color: #2C3E50;
+            color: #F7F7F7;
+        }
+    </style>
 </head>
-
 <body>
-  <main>
-    <h1>Tervetuloa Vikingit.fi-sivustolle!</h1>
-  </main>
-</body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Viking-IT Oy</a>
+        </div>
+    </nav>
 
+    <header class="container text-center py-5">
+        <h1>Viikinkivoimaa yrityksesi pilvipalveluihin</h1>
+        <p>Modernia Microsoft 365 -asiantuntijapalvelua suomalaisille PK-yrityksille</p>
+        <a href="#contact" class="btn btn-primary">Ota yhteyttä</a>
+    </header>
+
+    <section class="container py-5">
+        <h2>Palvelumme</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>M365 Kartoituspalvelu</h3>
+                <p>Kokonaisvaltainen Microsoft 365 ympäristön auditointi ja parannusehdotukset.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>M365 Ylläpitopalvelut</h3>
+                <p>Kolmivaiheinen ylläpitomalli: Mannaz, Raidho ja Ansuz. Skaalautuva tuki yrityksesi tarpeisiin.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5 bg-light">
+        <h2>Yrityksestämme</h2>
+        <p>Viking-IT Oy tarjoaa asiantuntevaa ja helposti ymmärrettävää Microsoft 365 -palvelua. Keskitymme PK-yritysten tarpeisiin ja tuomme modernit pilvipalvelut kaikkien ulottuville.</p>
+    </section>
+
+    <section id="contact" class="container py-5">
+        <h2>Ota yhteyttä</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nimi</label>
+                <input type="text" class="form-control" id="name" placeholder="Etunimi Sukunimi">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Sähköposti</label>
+                <input type="email" class="form-control" id="email" placeholder="esimerkki@yritys.fi">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Viesti</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Lähetä</button>
+        </form>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>© 2025 Viking-IT Oy. Modernia IT-palvelua viikinkihengessä.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
